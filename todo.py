@@ -18,3 +18,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def delete_task(name):
+       if name not in tasks:
+           print(f"'{name}' not found, nothing to delete")
+           return
+       tasks.remove(name)
+       
